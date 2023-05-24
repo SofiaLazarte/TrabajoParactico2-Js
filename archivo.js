@@ -67,7 +67,6 @@ else {
     (nota=!isNaN)
     alert("Escriba un numero valido")
 }
-*/
 
 //punto tres ---------------------------------------------------------------------------------------------------
 
@@ -81,3 +80,33 @@ while (confirm("quiere serguir ingresando") == true)
 
 document.write(texto);
 
+
+*/
+
+//punto cuatro ---------------------------------------------------------------------------------------------------
+
+let numero = parseInt(prompt("Escriba un numero"));
+
+if (!isNaN(numero)) 
+{
+    while (confirm("quiere serguir ingresando") == true) 
+    {
+        let cadena = parseInt(prompt("Escriba un nuevo numero"));
+        if (!isNaN(cadena)) 
+        {
+            numero = numero + cadena;
+        }
+        else 
+        {
+            alert("Escriba un numero valido");
+        }
+        
+    }
+}
+else
+{
+    
+    alert("Escriba un numero valido");
+}
+
+document.write(numero);
