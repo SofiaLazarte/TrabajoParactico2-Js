@@ -1,4 +1,4 @@
-//punto uno
+//punto uno --------------------------------------------------------------------------------------------
 /*
 let edad = prompt ("Escriba su edad")
 
@@ -18,9 +18,9 @@ else
 {
 alert ("Ingrese un valor correcto")
 }
-*/
 
-//punto dos
+
+//punto dos -----------------------------------------------------------------------------------------------------------
 
 let nota =  parseInt (prompt("Escriba su nota"))
 
@@ -67,4 +67,17 @@ else {
     (nota=!isNaN)
     alert("Escriba un numero valido")
 }
-    
+*/
+
+//punto tres ---------------------------------------------------------------------------------------------------
+
+let texto = prompt("Escriba un texto");
+
+while (confirm("quiere serguir ingresando") == true) 
+{
+    let cadena = prompt("Escriba un nuevo texto");
+    texto = texto + "-" + cadena;
+}
+
+document.write(texto);
+
