@@ -110,7 +110,7 @@ else
 }
 
 document.write(numero);
-*/
+
 
 //punto cinco ---------------------------------------------------------------------------------------------------
 
@@ -136,7 +136,7 @@ do {
 
 
 
-/*
+
 // punto seis
 
 for (let i = 1; i <= 30; i++) 
@@ -151,4 +151,21 @@ for (let i = 1; i <= 30; i++)
     //document.write() tenemos que usar el mismo caracter que en HTML, el "<br>" . El document.write() lo que va a hacer es escribir en HTML el código que pasemos a la función, por ese motivo hay que usar el "<br>". Si el salto de línea lo quisiésemos incluir en un alert() entonces tendríamos que usar el caracter "\n" para que hiciese el salto de línea, que es el caracter que hay que usar para hacer el salto de línea en javascript
 }
 */
+
 // punto siete 
+
+let numero = parseInt(prompt("Escriba un numero"));
+
+if (numero < 50) 
+{
+    for (let i = numero; i >= 0; i--)
+    {
+        let result = i + "" ;
+        let secuencia = result.repeat(i);
+        document.write(secuencia + "<br>");
+    }
+}
+else
+{
+    alert("Escriba un numero menor a 50");
+}
