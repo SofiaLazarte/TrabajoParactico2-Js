@@ -121,6 +121,7 @@ let letras = "TRWAGMYFPDXBNJZSQVHLCKE";
 do {
 
     let documento = parseInt(prompt("Escriba su DNI"));
+    
     if (documento >= 0 && documento <= 99999999) 
     {
         let resto = documento % 23;
@@ -150,7 +151,7 @@ for (let i = 1; i <= 30; i++)
     document.write(secuencia + "<br>");
     //document.write() tenemos que usar el mismo caracter que en HTML, el "<br>" . El document.write() lo que va a hacer es escribir en HTML el código que pasemos a la función, por ese motivo hay que usar el "<br>". Si el salto de línea lo quisiésemos incluir en un alert() entonces tendríamos que usar el caracter "\n" para que hiciese el salto de línea, que es el caracter que hay que usar para hacer el salto de línea en javascript
 }
-*/
+
 
 // punto siete 
 
@@ -168,4 +169,39 @@ if (numero < 50)
 else
 {
     alert("Escriba un numero menor a 50");
+}
+
+*/
+
+//punto ocho
+
+
+let numero = parseInt(prompt("Escriba un numero"));
+
+if (numero < 50) 
+{
+    for (let i = 1; i <= numero ; i++)  //Este es el bucle exterior que itera desde 1 hasta el número ingresado por el usuario (numero). La variable i se inicializa en 1 y se incrementa en cada iteración.
+    {
+        let fila = "";
+        //let fila, guardo los datos en esta variable.
+        
+
+        for (let y = 1; y <= i ; y++) //Este es el bucle interior que itera desde 1 hasta el valor actual de i. La variable y se inicializa en 1 y se incrementa en cada iteración. Este bucle se encarga de generar los números de la secuencia en cada línea.
+        {
+           fila = y +""; //toma el valor de y, lo convierte en una cadena de texto y lo asigna a la variable fila. Esto se utiliza para construir la secuencia de números en cada línea de la pirámide
+
+           
+
+           document.write(fila);
+
+           
+        }
+     
+        document.write("<br>")// permite salto de linea para hacer la piramide
+    }
+
+}
+else
+{
+    alert ("ingrese un numero valido");
 }
