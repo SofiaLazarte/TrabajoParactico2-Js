@@ -171,7 +171,7 @@ else
     alert("Escriba un numero menor a 50");
 }
 
-*/
+
 
 //punto ocho
 
@@ -204,4 +204,23 @@ if (numero < 50)
 else
 {
     alert ("ingrese un numero valido");
+}
+*/
+
+//punto nueve
+
+for (let i = 1; i <= 500; i++) 
+{
+    document.write ("<br>" + i);
+    
+    if (i % 4 === 0 ) 
+    {
+        document.write (" (Multiplo de 4)");
+    }
+    if (i % 9 === 0) {
+        document.write (" (Multiplo de 9)");
+    }
+    if (i % 5 === 0) {
+        document.write ("<br>" +" ----------- ");
+    }
 }
