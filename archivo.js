@@ -205,7 +205,7 @@ else
 {
     alert ("ingrese un numero valido");
 }
-*/
+
 
 //punto nueve
 
@@ -224,3 +224,27 @@ for (let i = 1; i <= 500; i++)
         document.write ("<br>" +" ----------- ");
     }
 }
+
+
+
+//punto diez
+
+let columna = parseInt(prompt("Escriba el numero de columnas"));
+let fila = parseInt(prompt("Escriba el numero de filas"));
+
+let numeros = fila * columna;
+
+
+
+for (let i = 30; i <= 0; i--) 
+{
+    document.write(i)
+}
+
+*/
+
+//punto doce
+
+//alert(Math.round(Math.random() * (max - min ) + min)) formula de generador de numeros aleatorios
+
+alert(Math.round(Math.random() * (100 - 1 ) + 1)) 
