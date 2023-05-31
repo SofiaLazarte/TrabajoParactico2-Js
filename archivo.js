@@ -283,7 +283,7 @@ alert(Math.round(Math.random() * (100 - 1 ) + 1));
 let texto = prompt("Escriba un texto");
 alert (texto.toUpperCase());
 
-*/
+
 
 
 //punto catorce -------------------------------------------------------------------------------------------------------------------------------
@@ -296,3 +296,70 @@ let array = texto.split("");
 // método join() crea y devuelve una nueva cadena concatenando todos los elementos, separados por comas o una cadena de separación especificada.
 let textoSeparado = array.join("-");
 document.write(textoSeparado);
+
+
+*/
+
+//punto quince -------------------------------------------------------------------------------------------------------------------------------
+
+let texto = "Hola Mundo";
+let cantidadVocales = 0 ;
+
+for (let i = 0; i < texto.length; i++)
+{
+    
+    
+    let letra = texto.charAt(i);
+    if (letra == "a" ||
+        letra == "e" ||
+        letra == "i" ||
+        letra == "o" ||
+        letra == "u" ) 
+    {
+        cantidadVocales = cantidadVocales + 1;
+        
+    }
+    
+    
+}
+document.write(cantidadVocales); 
+
+/*
+//punto dieciseis-------------------------------------------------------------------------------------------------------------------------------
+
+
+let texto = prompt("Escriba algo");
+
+
+
+for (let i = texto.length; i >= 0; i--)
+    
+{
+
+    document.write(texto.charAt(i));
+}
+
+
+
+
+//punto diecisiete ----------------------------------------------------------------------------------------------------------------------------
+
+let texto = prompt ("Escriba algo") ; //Hola
+let textMin = texto.toLowerCase(); //hola
+
+for (let i = 0; i < textMin.length; i++)
+{
+    let letra = textMin.charAt(i);
+
+    if (letra == "a" ||
+        letra == "e" ||
+        letra == "i" ||
+        letra == "o" ||
+        letra == "u" ) 
+    {
+        let posicion= textMin.indexOf(letra);
+        document.write("la primera vocal es " + letra + " esta en la posicion " + posicion);
+        break;
+    }
+}
+*/
