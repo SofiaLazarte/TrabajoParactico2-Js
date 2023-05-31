@@ -138,7 +138,7 @@ do {
 
 
 
-// punto seis
+// punto seis --------------------------------------------------------------------------------------------------------------------------------
 
 for (let i = 1; i <= 30; i++) 
 {
@@ -153,7 +153,7 @@ for (let i = 1; i <= 30; i++)
 }
 
 
-// punto siete 
+// punto siete -------------------------------------------------------------------------------------------------------------------------------
 
 let numero = parseInt(prompt("Escriba un numero"));
 
@@ -173,7 +173,7 @@ else
 
 
 
-//punto ocho
+//punto ocho ---------------------------------------------------------------------------------------------------------------------------------
 
 
 let numero = parseInt(prompt("Escriba un numero"));
@@ -207,7 +207,7 @@ else
 }
 
 
-//punto nueve
+//punto nueve --------------------------------------------------------------------------------------------------------------------------------
 
 for (let i = 1; i <= 500; i++) 
 {
@@ -227,7 +227,7 @@ for (let i = 1; i <= 500; i++)
 
 
 
-//punto diez
+//punto diez ----------------------------------------------------------------------------------------------------------------------------------
 
 let columna = parseInt(prompt("Escriba el numero de columnas"));
 let fila = parseInt(prompt("Escriba el numero de filas"));
@@ -243,8 +243,35 @@ for (let i = 30; i <= 0; i--)
 
 */
 
-//punto doce
+//punto once ---------------------------------------------------------------------------------------------------------------------------------
 
-//alert(Math.round(Math.random() * (max - min ) + min)) formula de generador de numeros aleatorios
+let edad1 = parseInt(prompt("Escriba tu edad"));
+let nombre1 = prompt("Escriba tu nombre");
 
-alert(Math.round(Math.random() * (100 - 1 ) + 1)) 
+let edad2 = parseInt(prompt("Escriba edad de un compañero"));
+let nombre2 = prompt("Escriba el nombre del compañero");
+
+let edad3 = parseInt(prompt("Escriba edad de un profesor"));
+let nombre3 = prompt("Escriba el nombre del profesor");
+
+let maximo = Math.max(edad1,edad2,edad3)
+
+if (maximo === edad1)
+{
+    alert("El mayor es "+ nombre1)
+}
+else if (maximo === edad2)
+{
+    alert("El mayor es "+ nombre2)
+}
+else (maximo === edad3)
+{
+    alert("El mayor es "+ nombre3)
+}
+
+
+//punto doce ---------------------------------------------------------------------------------------------------------------------------------
+
+//alert(Math.round(Math.random() * (max - min ) + min)) formula de generador de numeros aleatorios. Con funcion Math.round redondeo el numero al entero mas cercano y con Math.random elijo un numero aleatorio.
+
+//alert(Math.round(Math.random() * (100 - 1 ) + 1));
