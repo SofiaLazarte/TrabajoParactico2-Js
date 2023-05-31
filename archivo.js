@@ -276,10 +276,23 @@ else (maximo === edad3)
 
 alert(Math.round(Math.random() * (100 - 1 ) + 1));
 
-*/
+
 
 //punto trece ---------------------------------------------------------------------------------------------------------------------------------
 
-let texto = prompt("Escriba una texto");
+let texto = prompt("Escriba un texto");
 alert (texto.toUpperCase());
 
+*/
+
+
+//punto catorce -------------------------------------------------------------------------------------------------------------------------------
+
+let texto = prompt("Escriba un texto");
+
+//método “split()” para convertir strings en arrays.
+let array = texto.split("");
+
+// método join() crea y devuelve una nueva cadena concatenando todos los elementos, separados por comas o una cadena de separación especificada.
+let textoSeparado = array.join("-");
+document.write(textoSeparado);
