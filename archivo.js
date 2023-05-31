@@ -241,7 +241,7 @@ for (let i = 30; i <= 0; i--)
     document.write(i)
 }
 
-*/
+
 
 //punto once ---------------------------------------------------------------------------------------------------------------------------------
 
@@ -254,19 +254,19 @@ let nombre2 = prompt("Escriba el nombre del compañero");
 let edad3 = parseInt(prompt("Escriba edad de un profesor"));
 let nombre3 = prompt("Escriba el nombre del profesor");
 
-let maximo = Math.max(edad1,edad2,edad3)
+let maximo = Math.max(edad1,edad2,edad3);
 
 if (maximo === edad1)
 {
-    alert("El mayor es "+ nombre1)
+    alert("El mayor es "+ nombre1);
 }
 else if (maximo === edad2)
 {
-    alert("El mayor es "+ nombre2)
+    alert("El mayor es "+ nombre2);
 }
 else (maximo === edad3)
 {
-    alert("El mayor es "+ nombre3)
+    alert("El mayor es "+ nombre3);
 }
 
 
@@ -274,4 +274,12 @@ else (maximo === edad3)
 
 //alert(Math.round(Math.random() * (max - min ) + min)) formula de generador de numeros aleatorios. Con funcion Math.round redondeo el numero al entero mas cercano y con Math.random elijo un numero aleatorio.
 
-//alert(Math.round(Math.random() * (100 - 1 ) + 1));
+alert(Math.round(Math.random() * (100 - 1 ) + 1));
+
+*/
+
+//punto trece ---------------------------------------------------------------------------------------------------------------------------------
+
+let texto = prompt("Escriba una texto");
+alert (texto.toUpperCase());
+
